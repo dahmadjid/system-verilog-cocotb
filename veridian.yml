@@ -1,0 +1,24 @@
+include_dirs:
+  - src
+source_dirs:
+  - src
+auto_search_workdir: true
+verible:
+  syntax:
+    enabled: true
+    path: "verible-verilog-syntax"
+  format:
+    enabled: true
+    path: "verible-verilog-format"
+    args:
+      - --indentation_spaces=4
+verilator:
+  syntax:
+    enabled: true
+    path: "verilator"
+    args:
+      - --lint-only
+      - --sv
+      - -Isrc
+      - -Wall
+log_level: Info
