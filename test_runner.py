@@ -11,11 +11,9 @@ src = proj_path / "src"
 runner = get_runner("icarus") # or "verilator"
 
 sources = [
-    # src / "test_pkg.vhd",
 ]
 
 files_to_exclude = [
-    
 ]
 
 
